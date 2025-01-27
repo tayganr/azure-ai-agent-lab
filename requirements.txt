@@ -1,0 +1,2 @@
+azure-ai-projects
+azure-identity

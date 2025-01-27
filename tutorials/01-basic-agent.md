@@ -1,0 +1,158 @@
+# Tutorial 01: Getting Started with Azure AI Agents: Your First Agent  
+   
+Welcome to the first tutorial in the Azure AI Agent Service series! In this tutorial, we will guide you through creating a basic AI agent using the Python SDK. This agent will interact with users by responding to simple weather inquiries.   
+  
+## Prerequisites  
+   
+Before starting this tutorial, ensure you have the following prerequisites completed:  
+- An active Azure subscription.  
+- Python 3.8 or later installed.  
+- Azure CLI and machine learning extension installed and updated.  
+- Necessary roles assigned (Azure AI Developer and Cognitive Services OpenAI User).  
+- Required Python packages installed:  
+  ```bash  
+  pip install azure-ai-projects azure-identity  
+  ```  
+   
+## Step 1: Set Up Your Environment  
+   
+1. **Create a Connection String:**  
+  
+   First, create a connection string using your Azure AI project details. The format is:  
+   ```  
+   <HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>  
+   ```  
+   Example:  
+   ```  
+   eastus.api.azureml.ms;12345678-abcd-1234-9fc6-62780b3d3e05;my-resource-group;my-project-name  
+
+2. **Set the Connection String as an Environment Variable:**  
+
+    Export your connection string to an environment variable named `PROJECT_CONNECTION_STRING`.  
+
+    - For **PowerShell**:
+      ```powershell
+      $env:PROJECT_CONNECTION_STRING="your-connection-string-here"
+      ```
+
+    - For **Bash**:
+      ```bash
+      export PROJECT_CONNECTION_STRING="your-connection-string-here"
+      ```
+
+    - For **Windows Command Prompt**:
+      ```cmd
+      set PROJECT_CONNECTION_STRING="your-connection-string-here"
+      ```
+   
+## Step 2: Create the Agent  
+   
+3. **Write the Python Code:**  
+  
+   Open your preferred text editor and create a new Python file. Copy and paste the following code into the file:  
+  
+   ```python  
+   import os  
+   from azure.ai.projects import AIProjectClient  
+   from azure.identity import DefaultAzureCredential  
+  
+   # Initialize the AI Project Client  
+   project_client = AIProjectClient.from_connection_string(  
+       credential=DefaultAzureCredential(),   
+       conn_str=os.environ["PROJECT_CONNECTION_STRING"]  
+   )  
+  
+   with project_client:  
+       # Create a simple agent  
+       agent = project_client.agents.create_agent(  
+           model="gpt-4o-mini",  
+           name="joke-agent",  
+           instructions="You are a humorous AI agent. Your task is to generate a joke based on the topic provided by the user. Ensure the joke is light-hearted, appropriate, and relevant to the topic.",  
+           tools=[]  # No tools for this basic tutorial  
+       )  
+       print(f"Created agent, agent ID: {agent.id}")  
+  
+       # Create a conversation thread  
+       thread = project_client.agents.create_thread()  
+       print(f"Created thread, thread ID: {thread.id}")  
+  
+       # Add a user message to the thread  
+       message = project_client.agents.create_message(  
+           thread_id=thread.id,  
+           role="user",  
+           content="Microsoft"  
+       )  
+       print(f"Created message, message ID: {message.id}")  
+  
+       # Run the agent  
+       run = project_client.agents.create_and_process_run(thread_id=thread.id, assistant_id=agent.id)  
+       print(f"Run finished with status: {run.status}")  
+  
+       if run.status == "failed":  
+           print(f"Run failed: {run.last_error}")  
+  
+       # Retrieve and print the agent's response  
+       messages = project_client.agents.list_messages(thread_id=thread.id)  
+       last_msg = messages.get_last_text_message_by_role("assistant")  
+       if last_msg:  
+           print(f"Agent Response: {last_msg.text.value}")  
+  
+       # Clean up by deleting the agent  
+       project_client.agents.delete_agent(agent.id)  
+       print("Deleted agent")  
+   ```  
+   
+## Step 3: Run Your Code
+   
+4. **Execute the Python Script:**  
+  
+   Open your terminal or command prompt, navigate to the directory where your Python file is saved, and run the script:  
+  
+   ```bash  
+   python your_script_name.py  
+   ```  
+  
+   Replace `your_script_name.py` with the actual filename of your script.  
+   
+5. **Observe the Output:**  
+  
+   - As the script executes, it will create an agent, set up a conversation thread, and send a user message.  
+   - The agent will process the message and respond based on its instructions.  
+   - You should see the following output in your terminal:  
+  
+     ```  
+        Created agent, agent ID: asst_Ws3JjylAsLD2QTT9ycZ38pCY
+        Created thread, thread ID: thread_0OB0j2KlfjfiLOvqimjJ4Jau
+        Created message, message ID: msg_aUnBbT0chDdOMwz4xpmQOn43
+        Run finished with status: RunStatus.COMPLETED
+        Agent Response: Why did Microsoft go to therapy? 
+
+        It had too many "windows" open and couldn't find its "inner peace"!
+        Deleted agent
+     ```  
+  
+   Note: The agent's response may vary as it is generated by the language model.  
+   
+## Understanding the Code  
+   
+- **Agent Creation:**  
+  
+  The agent is created with minimal setup, using a model and basic instructions. No additional tools are used in this simple example.  
+   
+- **Thread and Message:**  
+  
+  A conversation thread is established where the user can send messages. In this tutorial, we send a single message.  
+   
+- **Agent Run:**  
+  
+  The agent processes the thread's messages and responds. The status of the run and the agent's response are printed to the console.  
+   
+- **Cleanup:**  
+  
+  After the interaction, the agent is deleted to clean up resources.  
+   
+## Next Steps  
+   
+Congratulations! You've successfully created a basic Azure AI agent that can respond to user inquiries. This foundational setup prepares you for more advanced tutorials where you'll integrate tools and extend your agent's capabilities.  
+   
+Proceed to the next tutorial in the series to learn how to enhance your agent with file search capabilities: [Tutorial 02: Empowering Your Agent: Integrating File Search](02-file-search.md).
