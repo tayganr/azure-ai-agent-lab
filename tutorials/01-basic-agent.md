@@ -124,4 +124,4 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 Congratulations! You've successfully created a basic Azure AI agent that can respond to user inquiries. This foundational setup prepares you for more advanced tutorials where you'll integrate tools and extend your agent's capabilities.  
    
-Proceed to the next tutorial in the series to learn how to enhance your agent with file search capabilities: [Tutorial 02: Empowering Your Agent: Integrating File Search](02-file-search.md).
+Proceed to the next tutorial in the series to learn how to enhance your agent with file search capabilities: [Tutorial 02: Integrating File Search](02-file-search.md).

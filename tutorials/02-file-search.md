@@ -162,4 +162,4 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 Congratulations! You've successfully integrated file search capabilities into your Azure AI agent. This enhancement allows your agent to leverage document-based information for more informed responses.   
   
-Proceed to the next tutorial in the series to learn how to enhance your agent with Bing Search capabilities: [Tutorial 03: Augmenting Intelligence: Using Bing Search with Your Agent](03-bing-search.md).
+Proceed to the next tutorial in the series to learn how to enhance your agent with Bing Search capabilities: [Tutorial 03: Grounding Your Agent with Bing Search](03-bing-search.md).

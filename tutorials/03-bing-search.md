@@ -159,4 +159,4 @@ Deleted agent
   
 Congratulations! You've successfully integrated Bing Search capabilities into your Azure AI agent. This enhancement allows your agent to provide up-to-date responses based on real-world information.  
    
-Proceed to the next tutorial in the series to learn how to enhance your agent with multiple tools: [Tutorial 04: Enhancing Interactivity: Implementing the Code Interpreter Tool](04-code-interpreter.md).
+Proceed to the next tutorial in the series to learn how to enhance your agent with multiple tools: [Tutorial 04: Implementing the Code Interpreter Tool](04-code-interpreter.md).
