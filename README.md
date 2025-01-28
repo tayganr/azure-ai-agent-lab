@@ -9,8 +9,8 @@
 1. [What is Azure AI Agent Service](#what-is-azure-ai-agent-service)  
 2. [Azure AI Agent Service vs. OpenAI Assistants API](#azure-ai-agent-service-vs-openai-assistants-api)  
 3. [Concepts](#concepts)  
-4. [Technical Prerequisites](#technical-prerequisites)  
-5. [Tutorial Series](#tutorial-series)  
+4. [Technical Prerequisites](#-technical-prerequisites)  
+5. [Tutorial Series](#-tutorial-series)  
 
 ## Azure AI Agent Service vs. OpenAI Assistants API
 
