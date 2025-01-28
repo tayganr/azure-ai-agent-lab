@@ -4,6 +4,14 @@
 
 [Azure AI Agent Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/overview) is a fully managed platform designed to help developers create, deploy, and scale AI agents with ease, without the need to manage underlying compute and storage resources. By utilising advanced language models, it simplifies the process of building AI agents that can answer questions, perform tasks, and automate workflows. The service offers seamless integration with various tools and data sources, enabling agents to access and interact with real-world data. It provides features like automatic tool calling, secure data management, and extensive data integrations, making it ideal for enterprise applications requiring enhanced security and flexibility.
 
+## Table of Contents  
+  
+1. [What is Azure AI Agent Service](#what-is-azure-ai-agent-service)  
+2. [Azure AI Agent Service vs. OpenAI Assistants API](#azure-ai-agent-service-vs-openai-assistants-api)  
+3. [Concepts](#concepts)  
+4. [Technical Prerequisites](#technical-prerequisites)  
+5. [Tutorial Series](#tutorial-series)  
+
 ## Azure AI Agent Service vs. OpenAI Assistants API
 
 | **Feature**      | **Azure AI Agent Service**                                                                                       | **OpenAI Assistants API**                      |  
