@@ -2,21 +2,17 @@
   
 Welcome to the fourth tutorial in the Azure AI Agent Service series! In this tutorial, you will learn how to integrate the Code Interpreter tool into your AI agent. This tool will enable your agent to perform complex computations and generate visualizations based on provided data files.    
   
-## Prerequisites    
+## Step 1: Prerequisites  
   
-Before starting this tutorial, ensure you have completed the following prerequisites:    
+Before starting this tutorial, ensure you have completed the setup as described in the [Technical Prerequisites](../README.md#-technical-prerequisites) section of the README. Key steps include:
   
-- An active Azure subscription.    
-- Python 3.8 or later installed.    
-- Azure CLI and machine learning extension installed and updated.    
-- Necessary roles assigned (Azure AI Developer and Cognitive Services OpenAI User).    
-- Required Python packages installed:    
+- **Python Environment**: Python 3.8 or later should be installed and configured.
+- **Azure CLI**: Install Azure CLI and log in to your subscription.
+- **Repository Setup**: Clone the repository and set up a Python virtual environment.  
+- **Install Dependencies**: Use `pip` to install the required packages from `requirements.txt`.
+- **Environment Variable**: Ensure the `PROJECT_CONNECTION_STRING` is set.
   
-```bash    
-pip install azure-ai-projects azure-identity    
-```    
-  
-## Step 1: Write the Python Code    
+## Step 2: Write the Python Code    
   
 1. **Create a New Python File:**    
    Open your preferred text editor and create a new Python file. Copy and paste the following code into the file:    
@@ -103,7 +99,7 @@ if last_msg:
         print(f"Saved file: {file_id} as chart.png")    
 ```    
   
-## Step 2: Run Your Code    
+## Step 3: Run Your Code    
   
 2. **Execute the Python Script:**    
    Open your terminal or command prompt, navigate to the directory where your Python file is saved, and run the script:    

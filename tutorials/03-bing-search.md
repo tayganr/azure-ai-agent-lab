@@ -2,19 +2,15 @@
   
 Welcome to the third tutorial in the Azure AI Agent Service series! In this tutorial, we will enhance our AI agent by integrating the Bing Search tool. This integration will enable your agent to retrieve real-time information from the web, providing more accurate and up-to-date responses to user queries.  
    
-## Prerequisites    
+## Step 1: Prerequisites  
   
-Before starting this tutorial, ensure you have completed the following prerequisites:  
-   
-- An active Azure subscription.  
-- Python 3.8 or later installed.  
-- Azure CLI and machine learning extension installed and updated.  
-- Necessary roles assigned (Azure AI Developer and Cognitive Services OpenAI User).  
-- Required Python packages installed:  
-   
-```bash  
-pip install azure-ai-projects azure-identity  
-```  
+Before starting this tutorial, ensure you have completed the setup as described in the [Technical Prerequisites](../README.md#-technical-prerequisites) section of the README. Key steps include:
+  
+- **Python Environment**: Python 3.8 or later should be installed and configured.
+- **Azure CLI**: Install Azure CLI and log in to your subscription.
+- **Repository Setup**: Clone the repository and set up a Python virtual environment.  
+- **Install Dependencies**: Use `pip` to install the required packages from `requirements.txt`.
+- **Environment Variable**: Ensure the `PROJECT_CONNECTION_STRING` is set.
    
 ### Grounding with Bing Search Setup    
   
@@ -44,7 +40,7 @@ To use the Grounding with Bing Search resource, you must follow these steps:
 4. **Use Supported Models:**    
    - Note that Grounding with Bing Search only works with the following Azure OpenAI models: `gpt-3.5-turbo-0125`, `gpt-4-0125-preview`, `gpt-4-turbo-2024-04-09`, and `gpt-4o-0513`.  
    
-## Step 1: Write the Python Code    
+## Step 2: Write the Python Code    
   
 5. **Create a New Python File:**    
    Open your preferred text editor and create a new Python file. Copy and paste the following code into the file:  
@@ -122,7 +118,7 @@ project_client.agents.delete_agent(agent.id)
 print("Deleted agent")  
 ```  
    
-## Step 2: Run Your Code    
+## Step 3: Run Your Code    
   
 6. **Execute the Python Script:**    
    Open your terminal or command prompt, navigate to the directory where your Python file is saved, and run the script:  

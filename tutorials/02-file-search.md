@@ -2,50 +2,15 @@
    
 Welcome to the second tutorial in the Azure AI Agent Service series! In this tutorial, we will guide you through the process of integrating file search capabilities into your AI agent. This enhancement will allow your agent to respond to user queries based on the information contained in uploaded documents.  
    
-## Prerequisites  
-   
-Before starting this tutorial, ensure you have completed the following prerequisites:  
-   
-- An active Azure subscription.  
-- Python 3.8 or later installed.  
-- Azure CLI and machine learning extension installed and updated.  
-- Necessary roles assigned (Azure AI Developer and Cognitive Services OpenAI User).  
-- Required Python packages installed:  
-   
-```bash  
-pip install azure-ai-projects azure-identity  
-```  
-   
-## Step 1: Set Up Your Environment  
-   
-1. **Create a Connection String:**  
-   First, create a connection string using your Azure AI project details. The format is:  
+## Step 1: Prerequisites  
   
-   ```  
-   <HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>  
-   ```  
+Before starting this tutorial, ensure you have completed the setup as described in the [Technical Prerequisites](../README.md#-technical-prerequisites) section of the README. Key steps include:
   
-   Example:  
-  
-   ```  
-   eastus.api.azureml.ms;12345678-abcd-1234-9fc6-62780b3d3e05;my-resource-group;my-project-name  
-   ```  
-   
-2. **Set the Connection String as an Environment Variable:**  
-   Export your connection string to an environment variable named `PROJECT_CONNECTION_STRING`.  
-  
-   - For **PowerShell**:  
-     ```powershell  
-     $env:PROJECT_CONNECTION_STRING="your-connection-string-here"  
-     ```  
-   - For **Bash**:  
-     ```bash  
-     export PROJECT_CONNECTION_STRING="your-connection-string-here"  
-     ```  
-   - For **Windows Command Prompt**:  
-     ```cmd  
-     set PROJECT_CONNECTION_STRING="your-connection-string-here"  
-     ```  
+- **Python Environment**: Python 3.8 or later should be installed and configured.
+- **Azure CLI**: Install Azure CLI and log in to your subscription.
+- **Repository Setup**: Clone the repository and set up a Python virtual environment.  
+- **Install Dependencies**: Use `pip` to install the required packages from `requirements.txt`.
+- **Environment Variable**: Ensure the `PROJECT_CONNECTION_STRING` is set.
    
 ## Step 2: Upload Files and Create a Vector Store  
    
