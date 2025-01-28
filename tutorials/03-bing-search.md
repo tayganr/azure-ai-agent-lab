@@ -1,4 +1,6 @@
 # Tutorial 03: Augmenting Intelligence: Using Bing Search with Your Agent    
+
+[< Previous Module](./02-file-search.md) - [Home](../README.md) - [Next Module >](./04-code-interpreter.md)
   
 Welcome to the third tutorial in the Azure AI Agent Service series! In this tutorial, we will enhance our AI agent by integrating the Bing Search tool. This integration will enable your agent to retrieve real-time information from the web, providing more accurate and up-to-date responses to user queries.  
    

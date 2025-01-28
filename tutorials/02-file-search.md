@@ -1,4 +1,6 @@
 # Tutorial 02: Empowering Your Agent: Integrating File Search  
+
+[< Previous Module](./01-basic-agent.md) - [Home](../README.md) - [Next Module >](./03-bing-search.md)
    
 Welcome to the second tutorial in the Azure AI Agent Service series! In this tutorial, we will guide you through the process of integrating file search capabilities into your AI agent. This enhancement will allow your agent to respond to user queries based on the information contained in uploaded documents.  
    

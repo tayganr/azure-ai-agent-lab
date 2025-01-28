@@ -1,4 +1,6 @@
 # Tutorial 04: Enhancing Interactivity: Implementing the Code Interpreter Tool    
+
+[< Previous Module](./03-bing-search.md) - [Home](../README.md) - [Next Module >](./05-multi-tool-agent.md)
   
 Welcome to the fourth tutorial in the Azure AI Agent Service series! In this tutorial, you will learn how to integrate the Code Interpreter tool into your AI agent. This tool will enable your agent to perform complex computations and generate visualizations based on provided data files.    
   
