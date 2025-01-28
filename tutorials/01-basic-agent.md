@@ -1,6 +1,6 @@
 # Tutorial 01: Getting Started with Azure AI Agents: Your First Agent  
 
-[Home](../README.md) > [Next Module >](./02-file-search.md)
+[Home](../README.md) - [Next Module >](./02-file-search.md)
    
 Welcome to the first tutorial in the Azure AI Agent Service series! In this tutorial, we will guide you through creating a basic AI agent using the Python SDK. This agent will interact with users by responding to simple weather inquiries.   
   
