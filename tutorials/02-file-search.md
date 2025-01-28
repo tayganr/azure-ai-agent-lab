@@ -16,7 +16,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 2: Upload Files and Create a Vector Store  
    
-3. **Write the Python Code:**  
+1. **Write the Python Code:**  
    Open your preferred text editor and create a new Python file. Copy and paste the following code into the file:  
   
    ```python  
@@ -48,7 +48,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 3: Create an Agent with File Search Capabilities  
    
-4. **Extend the Code to Create the Agent:**  
+2. **Extend the Code to Create the Agent:**  
   
    Add the following code below your previous code to create an agent that utilizes the file search tool:  
   
@@ -72,7 +72,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 4: Create a Thread and Run the Agent  
    
-5. **Continue with the Code:**  
+3. **Continue with the Code:**  
   
    Now, add the following code to create a thread, add a user message, and run the agent:  
   
@@ -108,7 +108,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 5: Clean Up Resources  
    
-6. **Add Cleanup Code:**  
+4. **Add Cleanup Code:**  
   
    Finally, add the following lines at the end of your script to clean up resources:  
   
@@ -123,7 +123,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 6: Run Your Code  
    
-7. **Execute the Python Script:**  
+5. **Execute the Python Script:**  
   
    Open your terminal or command prompt, navigate to the directory where your Python file is saved, and run the script:  
   
@@ -133,7 +133,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
   
    Replace `your_script_name.py` with the actual filename of your script.  
    
-8. **Observe the Output:**  
+6. **Observe the Output:**  
    - As the script executes, it will upload a file, create a vector store, set up a conversation thread, and send a user message.  
    - The agent will process the message and respond based on the content of the uploaded document.  
    - You should see output similar to:  

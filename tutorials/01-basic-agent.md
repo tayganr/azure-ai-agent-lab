@@ -16,7 +16,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
 
 ## Step 2: Create the Agent  
    
-3. **Write the Python Code:**  
+1. **Write the Python Code:**  
   
    Open your preferred text editor and create a new Python file. Copy and paste the following code into the file:  
   
@@ -73,7 +73,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
    
 ## Step 3: Run Your Code
    
-4. **Execute the Python Script:**  
+2. **Execute the Python Script:**  
   
    Open your terminal or command prompt, navigate to the directory where your Python file is saved, and run the script:  
   
@@ -83,7 +83,7 @@ Before starting this tutorial, ensure you have completed the setup as described 
   
    Replace `your_script_name.py` with the actual filename of your script.  
    
-5. **Observe the Output:**  
+3. **Observe the Output:**  
   
    - As the script executes, it will create an agent, set up a conversation thread, and send a user message.  
    - The agent will process the message and respond based on its instructions.  
