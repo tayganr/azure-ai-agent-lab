@@ -22,8 +22,6 @@
 | 🚀 **Run**     | The activation of an agent to perform tasks based on the thread's messages. During a run, the agent processes the information and may call models and tools to achieve its objectives. |  
 | 📝 **Run Step**     | A detailed list of actions taken by the agent during a run. Each step shows how the agent interacts with tools, models, and messages to reach its final outcome. Examining run steps helps you understand the agent's decision-making process. |  
 
-Based on the provided context, here's an explanation of how pricing works for the Azure AI Agent Service:  
-   
 ## 🤔 Technical Prerequisites  
    
 1. **Azure Subscription**:  
@@ -38,7 +36,17 @@ Based on the provided context, here's an explanation of how pricing works for th
 4. **Azure CLI**:  
    - Install the Azure CLI. It is used to log in to your Azure subscription.  
    
-5. **Python Virtual Environment**:  
+5. **Clone the Repository**:  
+   - Use Git to clone the repository containing the tutorials to your local machine:  
+     ```bash  
+     git clone https://github.com/tayganr/azure-ai-agent-lab.git
+     ```  
+   - Navigate into the cloned repository directory:  
+     ```bash  
+     cd azure-ai-agent-lab
+     ```  
+   
+6. **Python Virtual Environment**:  
    - Create a Python virtual environment to manage dependencies cleanly:  
      ```bash  
      python -m venv myenv  
@@ -53,13 +61,13 @@ Based on the provided context, here's an explanation of how pricing works for th
        source myenv/bin/activate  
        ```  
    
-6. **Python Packages**:  
+7. **Python Packages**:  
    - Install necessary Python packages using pip and a requirements file:  
      ```bash  
      pip install -r requirements.txt  
      ```  
    
-7. **Connection String**:  
+8. **Connection String**:  
    - Create a connection string using information from your Azure AI project. This includes `HostName`, `AzureSubscriptionId`, `ResourceGroup`, and `ProjectName`. Set this as an environment variable `PROJECT_CONNECTION_STRING`:  
   
      - **For PowerShell**:  
@@ -79,13 +87,13 @@ Based on the provided context, here's an explanation of how pricing works for th
   
    - You can obtain the connection string from the Azure AI Foundry portal.  
    
-8. **Login to Azure**:  
+9. **Login to Azure**:  
    - Use the Azure CLI to log in to your Azure subscription:  
      ```bash  
      az login  
      ```  
    
-With these steps completed, you should be ready to run code associated with the Azure AI Agent Service on a new machine.
+By completing these steps, you'll be set up to run through the tutorials in the repository, enabling you to explore and learn about the Azure AI Agent Service.
 
 ## 📚 Tutorial Series  
    
