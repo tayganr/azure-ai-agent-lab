@@ -1,4 +1,4 @@
-# Tutorial 04: Enhancing Interactivity: Implementing the Code Interpreter Tool    
+# Tutorial 04: Implementing the Code Interpreter Tool
 
 [< Previous Module](./03-bing-search.md) - [Home](../README.md) - [Next Module >](./05-multi-tool-agent.md)
   

@@ -1,4 +1,4 @@
-# Tutorial 03: Augmenting Intelligence: Using Bing Search with Your Agent    
+# Tutorial 03: Grounding Your Agent with Bing Search
 
 [< Previous Module](./02-file-search.md) - [Home](../README.md) - [Next Module >](./04-code-interpreter.md)
   

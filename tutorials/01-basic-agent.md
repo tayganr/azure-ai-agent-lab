@@ -1,4 +1,4 @@
-# Tutorial 01: Getting Started with Azure AI Agents: Your First Agent  
+# Tutorial 01: Getting Started with Azure AI Agents
 
 [Home](../README.md) - [Next Module >](./02-file-search.md)
    

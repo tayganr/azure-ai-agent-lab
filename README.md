@@ -99,19 +99,19 @@ By completing these steps, you'll be set up to run through the tutorials in the 
    
 To help you get started with the Azure AI Agent Service, we've prepared a series of tutorials. These tutorials will guide you through the process of building and enhancing AI agents using the service.  
    
-1. **[Getting Started with Azure AI Agents: Your First Agent](/tutorials/01-basic-agent.md)**    
+1. **[Getting Started with Azure AI Agents](/tutorials/01-basic-agent.md)**    
    Learn how to create a basic agent using the Python SDK, focusing on instructions and messages.  
    
-2. **[Empowering Your Agent: Integrating File Search](/tutorials/02-file-search.md)**    
+2. **[Integrating File Search](/tutorials/02-file-search.md)**    
    Discover how to add file search capabilities to your agent, enabling it to handle file-based interactions.  
    
-3. **[Augmenting Intelligence: Using Bing Search with Your Agent](/tutorials/03-bing-search.md)**    
+3. **[Grounding Your Agent with Bing Search](/tutorials/03-bing-search.md)**    
    Integrate Bing Search to fetch real-time web data and enhance agent responses.  
    
-4. **[Enhancing Interactivity: Implementing the Code Interpreter Tool](/tutorials/04-code-interpreter.md)**    
+4. **[Implementing the Code Interpreter Tool](/tutorials/04-code-interpreter.md)**    
    Utilize the Code Interpreter tool to perform complex computations within your agent.  
    
-5. **[Creating a Multi-Tool Agent: Combining File Search, Bing Search, and Code Interpreter](/tutorials/05-multi-tool-agent.md)**    
+5. **[Creating a Multi-Tool Agent](/tutorials/05-multi-tool-agent.md)**    
    Build a comprehensive agent solution that leverages multiple tools for advanced functionality.  
    
 Feel free to follow these tutorials in order to gradually build up your skills and understanding of the Azure AI Agent Service.  

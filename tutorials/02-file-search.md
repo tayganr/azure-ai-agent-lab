@@ -1,4 +1,4 @@
-# Tutorial 02: Empowering Your Agent: Integrating File Search  
+# Tutorial 02: Integrating File Search
 
 [< Previous Module](./01-basic-agent.md) - [Home](../README.md) - [Next Module >](./03-bing-search.md)
    
