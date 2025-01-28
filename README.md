@@ -24,49 +24,68 @@
 
 Based on the provided context, here's an explanation of how pricing works for the Azure AI Agent Service:  
    
-### 💵 Pricing  
-   
-1. **Inference Costs**:  
-   - You are charged based on the inference cost of the base model used by each agent. This means that for each agent you create, you will incur charges for using the specific model (e.g., `gpt-4-0125`) associated with that agent.
-   
-2. **Code Interpreter Tool**:  
-   - If your agent utilises the Code Interpreter tool, the charges are based on the sessions created. For example, if the Code Interpreter is invoked simultaneously in two separate threads, this results in two distinct sessions. Each session lasts for an hour by default. Therefore, if a user continues to interact with the Code Interpreter within the same thread for up to an hour, the fee is only charged once for that session.  
-   
-3. **File Search**:  
-   - File search is billed according to the vector storage used. This implies that charges are associated with the amount of storage required to manage and index the files used in search operations.  
-   
-4. **No Additional Pricing or Quotas**:  
-   - There are no additional pricing structures or quotas specifically for using the AI Agent Service. The charges are primarily associated with the models and tools used within the service.  
-   
 ## 🤔 Technical Prerequisites  
    
-1. **Azure Subscription**:   
+1. **Azure Subscription**:  
    - You need an active Azure subscription. You can create one for free if you don't have it.  
    
 2. **Python Environment**:  
-   - Install Python 3.8 or later. Make sure your Python environment is set up and properly configured.  
+   - Install Python 3.8 or later. Ensure your Python environment is set up and properly configured.  
    
 3. **Azure AI Developer Role**:  
-   - Ensure you have the Azure AI Developer RBAC role assigned at the appropriate level to access and manage Azure AI services.  
+   - Assign the Azure AI Developer RBAC role at the Hub or Project level to access and manage Azure AI services.  
    
-4. **Cognitive Services OpenAI User Role**:  
-   - Assign the Cognitive Services OpenAI User role to your account to access OpenAI models and features.  
+4. **Azure CLI**:  
+   - Install the Azure CLI. It is used to log in to your Azure subscription.  
    
-5. **Azure CLI**:  
-   - Install the Azure CLI and the machine learning extension. Ensure it is updated to the latest version.  
+5. **Python Virtual Environment**:  
+   - Create a Python virtual environment to manage dependencies cleanly:  
+     ```bash  
+     python -m venv myenv  
+     ```  
+   - Activate the virtual environment:  
+     - On Windows:  
+       ```bash  
+       myenv\Scripts\activate  
+       ```  
+     - On macOS/Linux:  
+       ```bash  
+       source myenv/bin/activate  
+       ```  
    
 6. **Python Packages**:  
-   - Install necessary Python packages using pip:  
+   - Install necessary Python packages using pip and a requirements file:  
      ```bash  
-     pip install azure-ai-projects  
-     pip install azure-identity  
+     pip install -r requirements.txt  
      ```  
    
 7. **Connection String**:  
-   - Create a connection string using information from your Azure AI project. This includes `HostName`, `AzureSubscriptionId`, `ResourceGroup`, and `ProjectName`. Set this as an environment variable `PROJECT_CONNECTION_STRING`.  
+   - Create a connection string using information from your Azure AI project. This includes `HostName`, `AzureSubscriptionId`, `ResourceGroup`, and `ProjectName`. Set this as an environment variable `PROJECT_CONNECTION_STRING`:  
+  
+     - **For PowerShell**:  
+       ```powershell  
+       $env:PROJECT_CONNECTION_STRING="your-connection-string-here"  
+       ```  
+  
+     - **For Bash (macOS/Linux)**:  
+       ```bash  
+       export PROJECT_CONNECTION_STRING="your-connection-string-here"  
+       ```  
+  
+     - **For Windows Command Prompt**:  
+       ```cmd  
+       set PROJECT_CONNECTION_STRING="your-connection-string-here"  
+       ```  
+  
+   - You can obtain the connection string from the Azure AI Foundry portal.  
    
 8. **Login to Azure**:  
-   - Use the Azure CLI to log in to your Azure subscription.  
+   - Use the Azure CLI to log in to your Azure subscription:  
+     ```bash  
+     az login  
+     ```  
+   
+With these steps completed, you should be ready to run code associated with the Azure AI Agent Service on a new machine.
 
 ## 📚 Tutorial Series  
    
