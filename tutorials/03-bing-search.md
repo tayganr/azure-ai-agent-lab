@@ -12,9 +12,32 @@ Before starting this tutorial, ensure you have completed the setup as described 
 - **Azure CLI**: Install Azure CLI and log in to your subscription.
 - **Repository Setup**: Clone the repository and set up a Python virtual environment.  
 - **Install Dependencies**: Use `pip` to install the required packages from `requirements.txt`.
-- **Environment Variable**: Ensure the `PROJECT_CONNECTION_STRING` is set.
-   
-### Grounding with Bing Search Setup    
+- **Environment Variables**: Ensure the `PROJECT_CONNECTION_STRING` and `BING_CONNECTION_NAME` are set.  
+  
+### Setting Environment Variables  
+  
+To configure your environment correctly, set the following variables:  
+  
+1. **PROJECT_CONNECTION_STRING**: Follow the instructions in the README to set this variable.  
+  
+2. **BING_CONNECTION_NAME**: Export this variable with the name of your Bing Search connection:  
+  
+   - **For Bash (macOS/Linux)**:  
+     ```bash  
+     export BING_CONNECTION_NAME="your_connection_name_here"  
+     ```  
+   - **For Windows Command Prompt**:  
+     ```cmd  
+     set BING_CONNECTION_NAME="your_connection_name_here"  
+     ```  
+   - **For PowerShell**:  
+     ```powershell  
+     $env:BING_CONNECTION_NAME="your_connection_name_here"  
+     ```  
+  
+Replace `"your_connection_name_here"` with the actual name used for your Bing Search connection.  
+  
+### Grounding with Bing Search Setup  
   
 To use the Grounding with Bing Search resource, you must follow these steps:  
    
