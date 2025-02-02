@@ -14,7 +14,6 @@ AGENT_INSTRUCTIONS = "You are a helpful agent."
   
 # === Operational Constants ===  
 FILE_PATH = "./documents/quarterly_results.csv"  # Path to the local CSV file to upload  
-VECTOR_STORE_NAME = "my_vectorstore"  # Although not used here, keeping for consistency  
 USER_MESSAGE_CONTENT = (  
     "Could you please create a bar chart in the TRANSPORTATION sector for the "  
     "operating profit from the uploaded CSV file and provide the file to me?"  
