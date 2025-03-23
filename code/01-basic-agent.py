@@ -54,3 +54,4 @@ print(last_msg.text.value)
 
 # Clean up resources
 project_client.agents.delete_agent(agent.id)  
+project_client.agents.delete_thread(thread.id)
