@@ -93,31 +93,17 @@ Open your terminal or command prompt, navigate to the directory where your Pytho
 ```bash  
 python your_script_name.py  
 ```  
-
-Replace `your_script_name.py` with the actual filename of your script.  
-   
-**Observe the Output:**  
-  
-- As the script executes, it will create an agent, set up a conversation thread, and send a user message.  
-- The agent will process the message and respond based on its instructions.  
    
 ## Understanding the Code  
    
-- **Agent Creation:**  
-  
-  The agent is created with minimal setup, using a model and basic instructions. No additional tools are used in this simple example.  
-   
-- **Thread and Message:**  
-  
-  A conversation thread is established where the user can send messages. In this tutorial, we send a single message.  
-   
-- **Agent Run:**  
-  
-  The agent processes the thread's messages and responds.
-   
-- **Cleanup:**  
-  
-  After the interaction, the agent is deleted to clean up resources.  
+
+1. **Initialize AI Project Client:** Set up a client using credentials and connection settings to interact with the AI service.
+2. **Create an Agent:** Define an AI agent by specifying its model, name, and behavior instructions.
+3. **Create a Thread:** Establish a thread to facilitate communication with the agent.
+4. **Add a Message to the Thread:** Insert a user message into the thread to initiate communication with the agent.
+5. **Execute a Run:** Initiate a run to process the thread and generate a response from the agent.
+6. **Retrieve and Print the Agent's Response:** Access and display the agent's reply from the thread.
+7. **Clean Up Resources:** Delete the agent and thread to efficiently manage resources.
    
 ## Next Steps  
    
