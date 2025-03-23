@@ -16,7 +16,6 @@ Before starting this tutorial, ensure you have completed the setup as described 
   ```
   PROJECT_CONNECTION_STRING=your_connection_string_value_here
   ```
-  This file will be loaded by the `load_dotenv()` function in the code to configure your Azure AI Agent project connection.
 
 ## Step 2: Create the Agent  
    
