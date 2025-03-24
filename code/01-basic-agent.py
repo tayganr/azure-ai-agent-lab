@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from azure.ai.projects import AIProjectClient  
 from azure.identity import DefaultAzureCredential  
   
-# === Agent Configuration ===  
+# Agent Configuration
 AGENT_NAME = "joke-agent"  
 AGENT_MODEL = "gpt-4o-mini"  
 AGENT_INSTRUCTIONS = (  
@@ -11,7 +11,7 @@ AGENT_INSTRUCTIONS = (
     "provided by the user. Ensure the joke is light-hearted, appropriate, and relevant to the topic."  
 )  
   
-# === User Message Configuration ===
+# User Message Configuration
 USER_MESSAGE_CONTENT = "Microsoft"  
 
 # Load environment variables from .env file  
